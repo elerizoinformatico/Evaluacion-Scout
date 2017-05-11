@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pregunta1: 1
+  pregunta2: 1
+  pregunta3: 1
+  pregunta4: MyText
+  pregunta5: 1
+  pregunta6: 1
+  pregunta7: 1
+  pregunta8: MyText
+
+two:
+  pregunta1: 1
+  pregunta2: 1
+  pregunta3: 1
+  pregunta4: MyText
+  pregunta5: 1
+  pregunta6: 1
+  pregunta7: 1
+  pregunta8: MyText

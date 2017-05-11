@@ -1,0 +1,107 @@
+<div class="container">
+  <div id="contact">
+    <%= form_with(model: question, local: true) do |form| %>
+      <h3>Evaluación de la Jornada</h3><br>
+      <% if question.errors.any? %>
+        <h2>¡Existen errores a la hora de guardar!</h2><br>
+      <% end %>
+
+      <h4><strong>En relación a la logística de la Jornada, ¿Qué calificación le darías a:</strong></h4>
+
+      <div class="field">
+        <%= form.label :pregunta1, "La accesibilidad del Lugar?" %><br>
+        <div class="centrado">
+          <%= form.radio_button :pregunta1, '1', id: :question_pregunta1 %> 1
+          <%= form.radio_button :pregunta1, '2', id: :question_pregunta1 %> 2
+          <%= form.radio_button :pregunta1, '3', id: :question_pregunta1 %> 3
+          <%= form.radio_button :pregunta1, '4', id: :question_pregunta1 %> 4
+          <%= form.radio_button :pregunta1, '5', id: :question_pregunta1 %> 5
+          <%= form.radio_button :pregunta1, '6', id: :question_pregunta1 %> 6
+          <%= form.radio_button :pregunta1, '7', id: :question_pregunta1 %> 7
+        </div>
+      </div>
+      <br>
+      <div class="field">
+        <%= form.label :pregunta2, "La alimentación?" %><br>
+        <div class="centrado">
+          <%= form.radio_button :pregunta2, '1', id: :question_pregunta2 %> 1
+          <%= form.radio_button :pregunta2, '2', id: :question_pregunta2 %> 2
+          <%= form.radio_button :pregunta2, '3', id: :question_pregunta2 %> 3 
+          <%= form.radio_button :pregunta2, '4', id: :question_pregunta2 %> 4
+          <%= form.radio_button :pregunta2, '5', id: :question_pregunta2 %> 5
+          <%= form.radio_button :pregunta2, '6', id: :question_pregunta2 %> 6
+          <%= form.radio_button :pregunta2, '7', id: :question_pregunta2 %> 7
+        </div>
+      </div>
+      <br>
+      <div class="field">
+        <%= form.label :pregunta3, "Los materiales utilizados?" %><br>
+        <div class="centrado">
+          <%= form.radio_button :pregunta3, '1', id: :question_pregunta3 %> 1
+          <%= form.radio_button :pregunta3, '2', id: :question_pregunta3 %> 2 
+          <%= form.radio_button :pregunta3, '3', id: :question_pregunta3 %> 3
+          <%= form.radio_button :pregunta3, '4', id: :question_pregunta3 %> 4
+          <%= form.radio_button :pregunta3, '5', id: :question_pregunta3 %> 5
+          <%= form.radio_button :pregunta3, '6', id: :question_pregunta3 %> 6
+          <%= form.radio_button :pregunta3, '7', id: :question_pregunta3 %> 7
+        </div>
+      </div>
+      <br>
+      <div class="field">
+        <%= form.label :pregunta4, "¿Qué aspectos de la logística destacarías o crees que debimos mejorar?" %><br>
+        <%= form.text_area :pregunta4, id: :question_pregunta4 %>
+      </div>
+      <br>
+      <h4><strong>En relación contenidos de trabajo de la Jornada, ¿Qué calificación le darías a:</strong></h4>
+      <div class="field">
+        <%= form.label :pregunta5, "Los temas abordados?" %><br>
+        <div class="centrado">
+          <%= form.radio_button :pregunta5, '1', id: :question_pregunta5 %> 1
+          <%= form.radio_button :pregunta5, '2', id: :question_pregunta5 %> 2
+          <%= form.radio_button :pregunta5, '3', id: :question_pregunta5 %> 3
+          <%= form.radio_button :pregunta5, '4', id: :question_pregunta5 %> 4
+          <%= form.radio_button :pregunta5, '5', id: :question_pregunta5 %> 5
+          <%= form.radio_button :pregunta5, '6', id: :question_pregunta5 %> 6
+          <%= form.radio_button :pregunta5, '7', id: :question_pregunta5 %> 7
+        </div>
+      </div>
+      <br>
+      <div class="field">
+        <%= form.label :pregunta6, "La claridad de la exposición?" %><br>
+        <div class="centrado">
+          <%= form.radio_button :pregunta6, '1', id: :question_pregunta6 %> 1 
+          <%= form.radio_button :pregunta6, '2', id: :question_pregunta6 %> 2
+          <%= form.radio_button :pregunta6, '3', id: :question_pregunta6 %> 3
+          <%= form.radio_button :pregunta6, '4', id: :question_pregunta6 %> 4
+          <%= form.radio_button :pregunta6, '5', id: :question_pregunta6 %> 5
+          <%= form.radio_button :pregunta6, '6', id: :question_pregunta6 %> 6
+          <%= form.radio_button :pregunta6, '7', id: :question_pregunta6 %> 7
+        </div>
+      </div>
+      <br>
+      <div class="field">
+        <%= form.label :pregunta7, "El material elaborado?" %><br>
+        <div class="centrado">
+          <%= form.radio_button :pregunta7, '1', id: :question_pregunta7 %> 1 
+          <%= form.radio_button :pregunta7, '2', id: :question_pregunta7 %> 2
+          <%= form.radio_button :pregunta7, '3', id: :question_pregunta7 %> 3
+          <%= form.radio_button :pregunta7, '4', id: :question_pregunta7 %> 4
+          <%= form.radio_button :pregunta7, '5', id: :question_pregunta7 %> 5
+          <%= form.radio_button :pregunta7, '6', id: :question_pregunta7 %> 6
+          <%= form.radio_button :pregunta7, '7', id: :question_pregunta7 %> 7
+        </div>
+      </div>
+      <br>
+      <div class="field">
+        <%= form.label :pregunta8, "¿Cuál fue el tema más útil o valioso para ti?" %><br>
+        <%= form.text_area :pregunta8, id: :question_pregunta8 %>
+      </div>
+      <br>
+      <div class="actions">
+        <div class="centrado">
+          <%= form.submit "Enviar", class: "button2" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
